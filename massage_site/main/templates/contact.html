@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Contact {% endblock %}
+
+{% block content %}
+<h1> Nous contacter</h1>
+<div class="content">
+    <div class="contact" id="tel">
+        <h2>Téléphone</h2>
+        <br>
+        <img class="icon" src="{% static 'images/tel.png'%}" >
+        <h3>06 ** ** ** **</h3>
+        
+    </div>
+
+    <div class="contact" id="mail">
+        <h2>Email</h2> <br>
+        <img class="icon" src="{% static 'images/mail.png'%}" >
+        <h3>blablablabla@gmail.com</h3>
+        
+    </div>
+
+    <div class="contact" id="sur place">
+        <h2>Localisation</h2> <br>
+        <img class="icon" src="{% static 'images/loc.png'%}" >
+        <h3> 12 avenue du blablabla</h3>
+        
+    </div>
+
+</div>
+{% endblock %}

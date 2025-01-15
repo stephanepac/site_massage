@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load static%}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div style="display: flex;flex-direction: column;justify-content: center;align-items: center;padding-top: 5rem;">
+
+
+<h1> Le soleil relaxation</h1>
+<h2>Venez vous détendre et vous relaxer chez nous</h2>
+
+<img id="fond" src="{% static 'images/soleil.png'%}" >
+
+<button id="rdv"> Prendre RDV</button>
+</div>
+{% endblock %}
