@@ -33,6 +33,10 @@ nav img{
     justify-content: space-evenly;
 }
 
+.navbar{
+    margin-bottom: 2.5rem;
+}
+
 .nav-item a{
     color: #ffffff;
     border-radius: 4rem;
@@ -49,7 +53,7 @@ nav img{
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #4A4A4A;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
@@ -58,7 +62,7 @@ h1 {
 
 h2 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #6A6A6A;
     padding: 5px 10px;
     border-radius: 5px;
@@ -84,6 +88,17 @@ h2 {
 
 }
 
+.prestation{
+    padding: 3rem 4rem;
+    text-align: center;
+}
+
+.longueur{
+    display: flex;
+    width: 90vw;
+    justify-content: space-evenly;
+}
+
 .content p{
     color: #8B3E48 ;
     padding: 3rem;
@@ -99,7 +114,7 @@ h2 {
 
 .contact{
     width: 20rem;
-    height: 10rem;
+    height: 25rem;
     border-radius: 2rem;
     margin-right: 4.5rem;
     text-align: center;
@@ -139,4 +154,11 @@ h2 {
 #propos{
     font-size: 2rem;
     color: #4A4A4A;
+}
+
+.img_pres{
+    max-width: 60vw;
+    height: 30rem;
+    border-radius: 10%;
+    margin-top: 2rem;
 }
