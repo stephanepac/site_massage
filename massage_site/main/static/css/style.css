@@ -26,6 +26,10 @@ nav{
 nav img{
     height: 6.5rem;
 }
+.nav-item{
+    display: flex;
+    justify-content: center;
+}
 
 .navigation{
     display: flex;
@@ -43,6 +47,8 @@ nav img{
     font-size: 2.5rem;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-item a:hover {
@@ -128,7 +134,7 @@ h2 {
     margin-bottom: 1.3rem;
 }
 
-#rdv {
+.rdv {
     font-family: 'Quicksand', sans-serif;
     background: linear-gradient(to right, #F8BBD0, #87CEEB); /* Dégradé doux */
     color: white;
@@ -161,4 +167,78 @@ h2 {
     height: 30rem;
     border-radius: 10%;
     margin-top: 2rem;
+}
+#menu{
+    position: absolute;
+    top: 65px;
+    right: 40px;
+    display: none;
+    width: 2rem;
+    height:2rem;
+}
+
+.mobile-menu{
+    display: block;
+}
+
+
+@media screen and (max-width:1000px) {
+    .navigation{
+        display: none;
+    }
+
+    .container-fluid{
+        height:100vh;
+        width:100vw;
+        position: absolute;
+        top: 0;
+
+    }
+    .navigation.mobile-menu{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height:100%;
+        background-color: #fffaf0;
+        display: flex;
+        justify-content: center;
+
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    #propos{
+        font-size: 1.5rem;
+    }
+    .ex{
+        display: none;
+    }
+
+    .content{
+        padding:2rem 3rem;
+    }
+
+    .nav-item a{
+        width:70vw;
+    }
+
+    #logo{
+        position: absolute;
+        top: 20px;
+        left:20px;
+    }
+
+    #menu{
+        display: block;
+    }
+    .presta{
+        width: 60vw;
+        height:100vw;
+    }
+    .prestation{
+        padding: 0;
+    }
 }

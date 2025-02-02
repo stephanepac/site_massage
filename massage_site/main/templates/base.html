@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar  navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}">
+          <a id="logo" class="navbar-brand" href="{% url 'home' %}">
             <img src="{% static 'images/logo.png'%}">
           </a>
           <div class=" navbar-collapse navigation" id="navbarNav">
@@ -33,10 +33,19 @@
               </li>
             </ul>
           </div>
+          <img src="{% static 'images/menu.png'%}" id="menu">
         </div>
       </nav>
     {% block content%}
 
     {%endblock%}
 </body>
+<script>
+  const menuHamburger = document.querySelector("#menu")
+  const navLinks = document.querySelector(".navigation")
+
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  })
+</script>
 </html>
