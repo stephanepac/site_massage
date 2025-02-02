@@ -134,7 +134,7 @@ h2 {
     margin-bottom: 1.3rem;
 }
 
-.rdv {
+.rdv,#rdv {
     font-family: 'Quicksand', sans-serif;
     background: linear-gradient(to right, #F8BBD0, #87CEEB); /* Dégradé doux */
     color: white;
@@ -197,6 +197,7 @@ h2 {
     .navigation.mobile-menu{
         position: absolute;
         top: 0;
+        left: 0;
         width: 100%;
         height:100%;
         background-color: #fffaf0;
@@ -205,16 +206,24 @@ h2 {
 
     }
     h1{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     h2{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     #propos{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .ex{
         display: none;
+    }
+
+    .presta p{
+        font-size: 0.6rem;
+    }
+    .contact{
+        margin-right: 0;
+        height:15rem;
     }
 
     .content{
@@ -240,5 +249,13 @@ h2 {
     }
     .prestation{
         padding: 0;
+    }
+   
+    .preview{
+        max-width:12rem;
+        height: 2rem;
+    }
+    .rdv{
+        font-size: 0.3rem;
     }
 }
